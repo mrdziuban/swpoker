@@ -164,25 +164,7 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
   };
 
   var chooseCardPack = function (val) {
-    var fib = ['0', '1', '2', '3', '5', '8', '13', '21', '34', '55', '89', '?'];
-    var goat = ['0', '\u00BD', '1', '2', '3', '5', '8', '13', '20', '40', '100', '?', '\u2615'];
-    var seq = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '?'];
-    var play = ['A\u2660', '2', '3', '5', '8', '\u2654'];
-    var tshirt = ['XL', 'L', 'M', 'S', 'XS', '?'];
-    switch (val) {
-    case ('fib'):
-      return fib;
-    case ('goat'):
-      return goat;
-    case ('seq'):
-      return seq;
-    case ('play'):
-      return play;
-    case ('tshirt'):
-      return tshirt;
-    default:
-      return [];
-    }
+    return ['1', '2', '3', '4'];
   };
 
   var refreshRoomInfo = function (roomObj) {
