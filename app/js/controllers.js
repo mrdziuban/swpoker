@@ -164,7 +164,7 @@ function RoomCtrl($scope, $routeParams, $timeout, socket) {
   };
 
   var chooseCardPack = function (val) {
-    return ['1', '2', '3', '4'];
+    return ['\u00BD', '1', '2', '3', '4'];
   };
 
   var refreshRoomInfo = function (roomObj) {
